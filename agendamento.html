@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/073810b3bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/stylelogin.css">
+    <title>Agendamento</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="./img/logo.png" alt="logo"></a>
+            <ul>
+                
+                <li><a href="./quemSomos.html">Quem somos</a></li>
+                <li><a href="#">Nossa Equipe</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <nav class="navigation2">
+            <ul>
+                <li><a href="principalCliente.html">Inicio</a></li>
+                <i class="fa-solid fa-angle-right"></i>
+                <li><a id="login" href="#">Agendamento</a></li>
+            </ul>
+          
+        </nav>
+
+    </header>
+
+    <div class="form-agendamento">
+        <div>
+            <img src="./img/img10.jpg" alt="">
+        </div>
+        <div class="agendamento">
+            <form class="form_agenda" action="#">
+                <div class="agenda_inputs">
+                    <label class="agenda_label" for="data">Data</label>
+                    <input class="agenda_input" type="date" name="data">
+
+                    <label class="agenda_label" for="hora">Hora</label>
+                    <input class="agenda_input" type="time" name="hora">
+
+                    <label class="agenda_label" for="nome">Nome do Completo</label>
+                    <input class="agenda_input" type="text" name="nome" placeholder="Nome Completo">
+
+                    <label class="agenda_label" for="services">Serviços</label>
+                    <input class="agenda_input" list="service" name="services">
+                    <datalist id="service">
+                        <option>Serviço 1</option>
+                        <option>Serviço 2</option>
+                        <option>Serviço 3</option>
+                        <option>Serviço 4</option>
+                    </datalist>
+
+                    <label class="agenda_label" for="profissional">Profissional</label>
+                    <input class="agenda_input" list="profissional" name="profissional">
+                    <datalist id="profissional">
+                        <option>Profissional 1</option>
+                        <option>Profissional 2</option>
+                        <option>Profissional 3</option>
+                        <option>Profissional 4</option>
+                    </datalist>
+
+                    <label class="agenda_label" for="local">Local de Atendimento</label>
+                    <input class="agenda_input" list="local" name="local">
+                    <datalist id="local">
+                        <option>Clínica</option>
+                        <option>Casa</option>
+                    </datalist>
+
+                    <label class="agenda_label " for="observacao">Observações</label>
+                    <input class="agenda_input observation" type="text" name="observacao">
+
+                    <button type="submit">Agendar</button>
+
+                    <a href="principalCliente.html">
+                        Cancelar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
